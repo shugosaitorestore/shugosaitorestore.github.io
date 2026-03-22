@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carry Over Budget - サポート</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      line-height: 1.7;
+    }
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 24px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 22px; font-weight: 700; }
+    header p { font-size: 14px; color: #666; margin-top: 4px; }
+    .container {
+      max-width: 680px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    h2 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: #1d1d1f;
+    }
+    p { font-size: 15px; color: #3a3a3c; margin-bottom: 10px; }
+    ol, ul { padding-left: 20px; }
+    li { font-size: 15px; color: #3a3a3c; margin-bottom: 6px; }
+    .step {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 14px;
+      align-items: flex-start;
+    }
+    .step-num {
+      background: #34c759;
+      color: #fff;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .step-text { font-size: 15px; color: #3a3a3c; padding-top: 3px; }
+    .faq-item { margin-bottom: 18px; }
+    .faq-q { font-weight: 700; font-size: 15px; margin-bottom: 4px; }
+    .faq-a { font-size: 15px; color: #3a3a3c; }
+    .contact-link {
+      display: inline-block;
+      background: #34c759;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      padding: 10px 22px;
+      font-size: 15px;
+      font-weight: 600;
+      margin-top: 6px;
+    }
+    footer {
+      text-align: center;
+      padding: 32px 20px;
+      font-size: 13px;
+      color: #999;
+    }
+    footer a { color: #34c759; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Carry Over Budget</h1>
+  <p>使い切れなかった予算を翌日に繰り越す家計簿アプリ</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>アプリの使い方</h2>
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-text">初回起動時に1日あたりの予算を設定する</div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-text">ホーム画面で「今日使える金額」を確認する</div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-text">支出が発生したら金額を入力して記録する</div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-text">使い切れなかった分は翌日に自動で繰り越される</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>よくある質問</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">アカウント登録は必要ですか？</div>
+      <div class="faq-a">不要です。アプリを起動してすぐにご利用いただけます。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">オフラインでも使えますか？</div>
+      <div class="faq-a">はい。すべての機能はインターネット接続なしで動作します。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">記録したデータはどこに保存されますか？</div>
+      <div class="faq-a">すべてのデータはお使いのiPhone内にのみ保存されます。外部サーバーへの送信は一切行いません。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">予算を使いすぎた場合はどうなりますか？</div>
+      <div class="faq-a">超過した分はマイナスとして翌日に持ち越されます。翌日の「使える金額」がその分だけ少なくなります。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">1日の予算はあとから変更できますか？</div>
+      <div class="faq-a">設定画面からいつでも変更できます。変更は翌日から反映され、過去のデータには影響しません。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">支出を間違えて登録してしまいました。</div>
+      <div class="faq-a">ホーム画面の支出一覧から、該当の項目を左にスワイプすることで削除できます。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">過去の支出履歴は確認できますか？</div>
+      <div class="faq-a">履歴画面から日次サマリー（日付・支出合計・繰り越し残高）を確認できます。</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>お問い合わせ</h2>
+    <p>ご不明な点やご意見・ご要望は、GitHubのIssueよりお気軽にお送りください。</p>
+    <a class="contact-link" href="https://github.com/shugosaitorestore/carry_over_budget/issues">
+      お問い合わせはこちら
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  <p><a href="privacy.html">プライバシーポリシー</a></p>
+  <p style="margin-top: 8px;">© 2026 Carry Over Budget</p>
+</footer>
+
+</body>
+</html>
